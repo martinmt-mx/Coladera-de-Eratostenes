@@ -1,10 +1,13 @@
 var arr = []
-for (i = 0; i<999; i++){
-    arr[i]=i+1
+for (i = 0; i<=999; i++){
+    arr[i]=true
 }
 
-for (i=0 in arr){
-    if(arr[i] != 0 || arr[i] != 1){
-        
+for (i = 2; i <= 999; i++){
+        for(ii = 2; i * ii <= 999; ii++){
+            arr[i*ii] = false
+        }
+    if(arr[i]==true){
+        console.log(i)
     }
 }
