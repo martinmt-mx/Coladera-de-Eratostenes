@@ -4,10 +4,10 @@ for (i = 0; i<=999; i++){
 }
 
 for (i = 2; i <= 999; i++){
-        for(ii = 2; i * ii <= 999; ii++){
+    if(arr[i]==true){
+        for(ii = i; i * ii <= 999; ii++){
             arr[i*ii] = false
         }
-    if(arr[i]==true){
         console.log(i)
     }
 }
